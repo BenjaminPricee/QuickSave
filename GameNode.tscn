@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Platform.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
+
+[node name="GameNode" type="Spatial"]
+
+[node name="Platform" parent="." instance=ExtResource( 1 )]
+transform = Transform( 4.69846, -0.34202, 0, 1.7101, 0.939693, 0, 0, 0, 5, 0, 0, 0 )
+
+[node name="RigidBody" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.51754, 0 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36471, 3.18992, 11.0619 )
